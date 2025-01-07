@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amaan Laghari">
+    <title>Ecommerce Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg position-relative">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brad text-decoration-none fw-bolder">Ecommerce Store</a>
+            
+            <button class="cart-btn btn btn-sm m-auto btn-warning position-absolute top-50 start-50 translate-middle">Cart</button>
+
+            <button class="burger p-1">
+                <div class="line"></div>
+            </button>
+            
+            <div class="collapsed">
+                <ul class="navlist m-auto">
+                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#Products" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="change-mode-btn btn btn-sm m-auto btn-dark">Dark Mode</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid bg-primary text-light">
+        <div class="p-5">
+            <div class="d-flex align-items-center justify-content-center p-5">
+                <h1 class="my-5">Welcome to <span class="title">EStore</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart position-fixed top-0 end-0 bg-dark-subtle">
+        <h1 class="m-2 text-dark">Cart</h1>
+        <div id="cart-items" class="d-flex flex-wrap justify-content-evenly">
+            <button id="remove-all-item-btn" class="position-absolute btn btn-sm btn-danger d-none" style="top: 10px; right: 10px;">Remove All</button>
+        </div>
+    </div>
+
+    <section class="container-fluid">
+        <h1 class="my-3 text-center">Featured Products</h1>
+        <div class="d-flex align-items-center justify-content-center flex-wrap p-2">
+            <div class="card m-2" style="width: 22rem;">
+                <img src="https://play-lh.googleusercontent.com/GD78NlC-yoQXcLsvTc3JLr_VVR5YKQp43FOfWLB7e5lwU_La_hy4olpMaj0_yY7ScgQ" alt="" class="card-img-top" style="height: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <div class="card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <p class="card-text text-danger">Rs. 500</p>
+                    <button class="add-to-cart btn btn-sm btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 22rem;">
+                <img src="https://play-lh.googleusercontent.com/GD78NlC-yoQXcLsvTc3JLr_VVR5YKQp43FOfWLB7e5lwU_La_hy4olpMaj0_yY7ScgQ" alt="" class="card-img-top" style="height: 10rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <div class="card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <p class="card-text text-danger">Rs. 200</p>
+                    <button class="add-to-cart btn btn-sm btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/index.js"></script>
+</html>
